@@ -5,10 +5,10 @@
 将下载后的数据文件放在data文件夹下
 
 ## 微调后模型权重
-百度网盘：
-链接：https://pan.baidu.com/s/1VXLkzX0uJnAQ4CKU6xH30g?pwd=d4uy 
-提取码：d4uy
-将下载后的模型权重替换medical-chatbot文件夹
+百度网盘：<br> 
+链接：https://pan.baidu.com/s/1VXLkzX0uJnAQ4CKU6xH30g?pwd=d4uy <br> 
+提取码：d4uy<br> 
+将下载后的模型权重替换medical-chatbot文件夹<br> 
 
 ## 效果展示
 |                        问题                        |                           ChatGLM3                           |                       medical-chatbot                        |
