@@ -18,4 +18,4 @@ CUDA_VISIBLE_DEVICES=3 python src/train_bash.py \
     --num_train_epochs 2.0 \
     --plot_loss True \
     --fp16 True
-
+ 
