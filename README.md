@@ -2,7 +2,7 @@
 本项目基于[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)项目和ChatGLM3-6B基座模型，通过指令微调旨在训练一个专注于中医问诊的聊天机器人。通过整合[fastllm](https://github.com/ztxz16/fastllm)项目转化微调模型，同时应用模型量化技术，以提高推理速度，最终模型的推理速度实现了显著的提升。同时，还可以选择使用检索增强生成（RAG）提高模型回复的性能。
 
 ## 数据集来源：[中文医疗在线问诊数据集](https://huggingface.co/datasets/michaelwzhu/ChatMed_Consult_Dataset)
-将下载后的数据文件放在data文件夹下
+将下载后的数据文件放在data文件夹下，运行代码`python preprocess.py`进行预处理
 
 ## 微调后模型权重
 百度网盘：<br> 
