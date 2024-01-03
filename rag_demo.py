@@ -9,7 +9,7 @@ try:
         import readline
 except ImportError:
     print("Install `readline` for a better experience.")
-
+ 
 
 def build_prompt(query):
     try:
