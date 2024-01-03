@@ -17,9 +17,11 @@ MODEL_PATH = os.environ.get('MODEL_PATH', './medical-chatbot')
 TOKENIZER_PATH = os.environ.get("TOKENIZER_PATH", MODEL_PATH)
 
 tokenizer = AutoTokenizer.from_pretrained(TOKENIZER_PATH, trust_remote_code=True)
-model = AutoModel.from_pretrained(MODEL_PATH,trust_remote_code=True).quantize(4)
+# 是否对模型进行4-bit量化 
+# model = AutoModel.from_pretrained(MODEL_PATH, trust_remote_code=True).to(DEVICE).quantize(4)
+model = AutoModel.from_pretrained(MODEL_PATH,trust_remote_code=True)
 
-
+# 是否开启fastllm加速
 # model = llm.from_hf(model, tokenizer, dtype = "float16") # dtype支持 "float16", "int8", "int4"
 os_name = platform.system()
 clear_command = 'cls' if os_name == 'Windows' else 'clear'
@@ -27,7 +29,7 @@ stop_stream = False
 
 welcome_prompt = "欢迎使用中医聊天机器人，使用 clear 命令可清除聊天历史，使用 exit 命令可退出应用程序。"
 # 从文件中读取queries
-with open('./test.txt', 'r') as file:
+with open('./queries.txt', 'r') as file:
     querys = file.read().split('\n')
 
 def main():
