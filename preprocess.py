@@ -16,4 +16,4 @@ df.columns = ['input', 'output', 'instruction']
 df = df[['instruction', 'input', 'output']]
 
 # 输出DataFrame为JSON文件
-df.to_json('data/medicalQA.json', orient='records', lines=True, force_ascii=False)
+df.to_json('data/medicalQA.json', orient='records', lines=True, force_ascii=False) 
