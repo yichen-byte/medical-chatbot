@@ -5,7 +5,7 @@ try:
     import platform
     if platform.system() != "Windows":
         import readline
-except ImportError:
+except ImportError: 
     print("Install `readline` for a better experience.")
 
 
