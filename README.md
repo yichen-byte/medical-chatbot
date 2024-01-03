@@ -1,0 +1,2 @@
+# medical-chatbot
+基于ChatGLM3基座模型和LLAMA-Factory框架进行微调的一个中医问答机器人
